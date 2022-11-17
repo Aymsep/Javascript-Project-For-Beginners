@@ -1,0 +1,148 @@
+/* import font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&display=swap');
+
+/* reset css  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: 'Tajawal', sans-serif; */
+    font-family: 'Frank Ruhl Libre', serif;
+
+}
+
+/* background color  */
+body{
+    /* background-image: linear-gradient(to right top, #4f4f4f, #4f4e57, #4c4d5e, #484d67, #424d6f, #344b6e, #224a6d, #02486a, #00435b, #003c4a, #00353a, #002e2b); */
+    background-color: #e19c241f;
+}
+
+/* center container */
+.container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 35px;
+}
+
+/*content style*/  
+
+.content{
+    /* border: 1px solid red; */
+    width: 600px;
+    height: auto;
+    text-align: center;
+    padding: 35px;
+    background-color: rgb(255, 255, 255);
+    border-radius:8px;
+    position: relative;
+    
+}
+
+
+/* img style to be rounded */
+.content img{
+    width:150px;
+    height: 150px;
+    clip-path: circle();
+    position: absolute;
+    top: -5em;
+    left: 37%;
+}
+
+
+/* first paragraph style */
+.content p:first-of-type{
+    color:black;
+    letter-spacing: .8px;
+    font-size: 20px;
+    padding: 85px 0 75px;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    overflow: hidden;
+ 
+}
+
+/* heading style */
+.content h1{
+    color: #e19b24;
+    letter-spacing: .8px;
+    text-transform: capitalize;
+}
+
+/* second paragraph style */
+.content p:last-of-type{
+    color: rgb(158, 154, 154);
+    letter-spacing: .8px;
+    font-size: 12px;
+    padding:15px 0;
+    text-transform: capitalize;
+}
+
+/* arrow style */
+.content a{
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    background-color:rgb(248, 229, 175);
+    
+}
+ /* arrow style on click */
+.content a:active{
+    transition: all 0.1s ease-in-out;
+    background-color:white;
+    color:rgb(248, 229, 175);
+    border: 1px solid rgb(248, 229, 175);
+}
+
+/* left arrow position */
+
+.content .left:first-of-type{
+    left: -.5em;
+}
+
+/* right arrow style  */
+.content .right:last-of-type{
+    right: -.5em;
+}
+
+
+/* button style */
+button{
+    padding:5px 65px;
+    font-size: 18px;
+    letter-spacing: .8px;
+    background-color: #e19b24;
+    border: none;
+    border-radius:8px;
+    color: white;
+    cursor: pointer;
+}
+
+/* span style */
+span{
+    position: absolute;
+    color: #e19b24;
+    font-size:150px;
+    rotate: -10deg;
+    opacity:0.3;
+}
+
+/* first span style */
+span:first-of-type{
+    top: 30px;
+    left: 5px;
+}
+
+/* second span style  */
+span:last-of-type{
+    bottom: 85px;
+    right: 40px;
+}
+
+/***********end of style*******/
